@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="project_organizer">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-startup-image" href="Flutter-3.png">
+  <title>Project Organizer</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-messaging.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyAnBcs0TVQdKueYNHF0VQNhm9xeF-x4EE8",
+      authDomain: "project-manager-fba0c.firebaseapp.com",
+      databaseURL: "https://project-manager-fba0c.firebaseio.com",
+      projectId: "project-manager-fba0c",
+      storageBucket: "project-manager-fba0c.appspot.com",
+      messagingSenderId: "767232810598",
+      appId: "1:767232810598:web:c64fb6ad3cfab9266197a7",
+      measurementId: "G-K25MMNMTN9"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+
+
+
+</body>
+
+</html>
